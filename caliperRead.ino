@@ -1,3 +1,12 @@
+/*
+Clock and ground each connect to the base of a 2n3904 
+through a 100ohm resistor.
+10kohm pullup resistors on the emitters. 
+Emitters connected to Arduino pins 4 and 5.
+Collectors common ground. 
+*/
+
+
 #define CLK 4
 #define DAT 5
 #define TIMEOUTL (millis()-currl < 150.0)
